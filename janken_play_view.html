@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>じゃんけんゲーム</title>
+  <link rel="stylesheet" href="janken_play_view.css">
+</head>
+
+<body>
+  <h1>じゃんけんゲーム</h1>
+  <h2>何を出すか選んでください。</h2>
+  <div>
+    <form name="gu" method="POST" action="janken_logic.php">
+      <label><a href="javascript:document.gu.submit()">
+          <img src="./doc/janken_gu.png" width="80" height="80"></a></label>
+      <input type="hidden" name="hand" value=0>
+    </form>
+    <form name="choki" method="POST" action="janken_logic.php">
+      <label><a href="javascript:document.choki.submit()">
+          <img src="./doc/janken_choki.png" width="80" height="80"></a></label>
+      <input type="hidden" name="hand" value=1>
+    </form>
+    <form name="pa" method="POST" action="janken_logic.php">
+      <label><a href="javascript:document.pa.submit()">
+          <img src="./doc/janken_pa.png" width="80" height="80"></a></label>
+      <input type="hidden" name="hand" value=2>
+    </form>
+  </div>
+</body>
+
+</html>
